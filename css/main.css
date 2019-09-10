@@ -1,14 +1,77 @@
 #test {
-  height: 100vh;
-  width: 100%;
+  height: 100%;
 }
 
 body {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .gradient {
   height: 100vh;
   background: linear-gradient(201deg, rgba(148, 148, 148, 0.07) 0%, rgba(148, 148, 148, 0.07) 50%, rgba(83, 83, 83, 0.07) 50%, rgba(83, 83, 83, 0.07) 100%), linear-gradient(90deg, rgba(148, 148, 148, 0.07) 0%, rgba(148, 148, 148, 0.07) 50%, rgba(83, 83, 83, 0.07) 50%, rgba(83, 83, 83, 0.07) 100%), linear-gradient(354deg, rgba(148, 148, 148, 0.07) 0%, rgba(148, 148, 148, 0.07) 40%, rgba(83, 83, 83, 0.07) 40%, rgba(83, 83, 83, 0.07) 60%), linear-gradient(90deg, #376faf, #18c5e4);
+}
+
+.controls-container {
+  width: 50%;
+  height: 300px;
+  position: relative;
+  top: -228px;
+  -webkit-transition: top 0.8s;
+  transition: top 0.8s;
+}
+
+.controls-container .add-button {
+  height: 100px;
+  width: 100px;
+  border: none;
+  outline: unset;
+  border-radius: 100%;
+  font-size: 25px;
+}
+
+.controls-container .color-button {
+  outline: unset;
+  border-color: transparent;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+.controls-container .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.controls-container .show-button {
+  outline: none;
+  border: black 1px solid;
+  border-top: unset;
+  border-left: unset;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  width: 150px;
+  height: 30px;
+}
+
+.controls-container .show-button:hover {
+  background-color: #6ebfc2;
 }
 /*# sourceMappingURL=main.css.map */

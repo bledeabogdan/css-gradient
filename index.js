@@ -1,9 +1,5 @@
-var lines = 0;
 var string = "height: 100vh; background: ";
-document.getElementById('numberOfLines').innerHTML = lines;
 const addLine = () => {
-    lines++;
-    document.getElementById('numberOfLines').innerHTML = lines;
     createProcentInput();
 }
 
@@ -41,7 +37,24 @@ const updateCss = (string) => {
     var color2 = document.getElementById('color2').value;
     string += "linear-gradient(90deg," + color1 + ", " + color2 + ");"
     console.log(string);
+    console.log(document.getElementsByTagName('body')[0]);
     document.getElementsByTagName('body')[0].style = string;
     document.getElementById('procentInputs').innerHTML = "";
 }
+
+var showButton = document.getElementsByClassName('show-button')[0];
+showButton.addEventListener("click", () => {
+    var style = getComputedStyle(document.getElementsByClassName("controls-container")[0], 'top').top;
+    const sheet = new CSSStyleSheet();
+    if (style !== "0px") {
+        sheet.replaceSync('.controls-container {top: 0px}');
+        document.adoptedStyleSheets = [sheet];
+        whatForClick = true;
+    } else {
+        whatForClick = false;
+        sheet.replaceSync('.controls-container {top: -228px}');
+        document.adoptedStyleSheets = [sheet];
+    }
+
+})
 
