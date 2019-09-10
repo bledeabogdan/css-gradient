@@ -1,0 +1,30 @@
+#test{
+    height: 100vh;
+}
+
+.gradient {
+  height: 100vh;
+  background: linear-gradient(
+      201deg,
+      rgba(148, 148, 148, 0.07) 0%,
+      rgba(148, 148, 148, 0.07) 50%,
+      rgba(83, 83, 83, 0.07) 50%,
+      rgba(83, 83, 83, 0.07) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 148, 148, 0.07) 0%,
+      rgba(148, 148, 148, 0.07) 50%,
+      rgba(83, 83, 83, 0.07) 50%,
+      rgba(83, 83, 83, 0.07) 100%
+    ),
+    linear-gradient(
+      354deg,
+      rgba(148, 148, 148, 0.07) 0%,
+      rgba(148, 148, 148, 0.07) 40%,
+      rgba(83, 83, 83, 0.07) 40%,
+      rgba(83, 83, 83, 0.07) 60%
+    ),
+    linear-gradient(90deg, rgb(55, 111, 175), rgb(24, 197, 228))
+
+}
