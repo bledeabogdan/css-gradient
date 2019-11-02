@@ -3,6 +3,8 @@ const addLine = () => {
     createProcentInput();
 }
 
+console.log("test");
+
 var addLineButton = document.getElementById('addLine');
 addLineButton.onclick = addLine;
 
